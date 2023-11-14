@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,500;1,400&display=swap');
+
+.container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  
+#title {
+  font-family:  'Source Code Pro', monospace;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+#title-b {
+  font-weight: 200;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.caption {
+  text-align: left;
+}
