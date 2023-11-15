@@ -28,8 +28,11 @@ const Confession: React.FC = () => {
   const refresherRef = useRef<HTMLIonRefresherElement | null>(null);
 
   const doRefresh = async (event: CustomEvent) => {
-    event.detail.complete();
+    setTimeout(() => {
+      event.detail.complete();
+    }, 1000)
   }
+
 
   return (
     <IonPage>
@@ -43,16 +46,18 @@ const Confession: React.FC = () => {
 
         <div className='container'>
 
-
           <Brand/>
 
           <IonButton color='danger' fill='outline' routerLink='/' shape='round'>Kembali</IonButton>
 
-          <IonGrid fixed={true}>
+          <IonGrid fixed={true} style={{
+            maxHeight: '500px',
+            overflowY: 'auto'
+          }}>
             {loading && <IonText>Tunggu Ya...</IonText>}
             {error && <IonText>{error.message}</IonText>}
 
-            {snapshots && snapshots.map((snapshot) => (
+            {snapshots && snapshots.map((snapshot: any) => (
               <IonCard color="light" key={snapshot.key}>
                   <IonCardContent>
                     <IonText className='caption'>
@@ -67,8 +72,10 @@ const Confession: React.FC = () => {
                   </IonCardContent>
                 </IonCard>
             ))}
-      
+    
+
           </IonGrid>
+
 
         </div>
       </IonContent>

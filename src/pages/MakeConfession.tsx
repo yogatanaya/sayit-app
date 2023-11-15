@@ -68,17 +68,19 @@ const MakeConfession: React.FC = () => {
             <IonCol size='12'>
                 <form onSubmit={handleSubmit}>
                     <IonItem>
-                        <IonInput label="Dari Siapa" labelPlacement="floating" fill="outline" placeholder="Tulis nama kamu, anonim gpp :)"
+                        <IonInput label="Dari Siapa" labelPlacement="stacked" placeholder="Tulis nama kamu, anonim gpp :)"
                         onIonInput={(e) => setFromSender(e.detail.value!)}
                         ></IonInput>
                     </IonItem>
+                    <br/>
                     <IonItem>
-                        <IonInput label="Untuk Siapa" labelPlacement="floating" fill="outline" placeholder="Tulis pesan buat siapa"
+                        <IonInput label="Untuk Siapa" labelPlacement="stacked" placeholder="Tulis pesan buat siapa"
                         onIonInput={(e) => setToSender(e.detail.value!)}
                         ></IonInput>
                     </IonItem>
+                    <br/>
                     <IonItem>
-                        <IonInput label="Pesannya" labelPlacement="floating" fill="outline" placeholder="Tulis pesan"
+                        <IonInput label="Pesannya" labelPlacement="stacked" placeholder="Tulis pesan"
                         onIonInput={(e) => setMessageSender(e.detail.value!)}
                         ></IonInput>
                     </IonItem>
