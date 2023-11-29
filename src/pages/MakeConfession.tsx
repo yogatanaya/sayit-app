@@ -58,11 +58,9 @@ const MakeConfession: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
+        <Brand/>
+        
         <div className='container'>
-
-          <Brand/>
-
-          <IonButton color='danger' fill='outline' routerLink='/' shape='round'>Kembali</IonButton>
 
           <IonGrid fixed={true}>
             <IonCol size='12'>
