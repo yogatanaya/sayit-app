@@ -64,7 +64,7 @@ const MakeConfession: React.FC = () => {
 
           <IonGrid fixed={true}>
             <IonCol size='12'>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} style={{ marginTop: '62px' }}>
                     <IonItem>
                         <IonInput label="Dari Siapa" labelPlacement="stacked" placeholder="Tulis nama kamu, anonim gpp :)"
                         onIonInput={(e) => setFromSender(e.detail.value!)}

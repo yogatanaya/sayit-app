@@ -11,7 +11,7 @@ const Brand: React.FC = () => {
 
   return (
     <IonHeader translucent={true} mode='md'>
-      <IonToolbar className="ion-padding">
+      <IonToolbar>
         {isMakeConfessionPage && (
         <IonButtons slot='start'>
           <IonBackButton defaultHref='/' icon={chevronBackOutline}/>
